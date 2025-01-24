@@ -16,10 +16,10 @@ const Footer = () => {
                             <Icons.logo className="w-7 h-7" />
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
-                            Manage your links with ease.
+                        Empowering Teens, Inspiring Futures.
                         </p>
                         <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                            Made by <Link href="https://shreyas-sihasane.vercel.app/" className="font-semibold ml-1">Shreyas</Link>
+                            Founder <Link href="https://www.linkedin.com/in/hassaana-v" className="font-semibold ml-1">Hassaana Begam</Link>
                         </span>
                     </div>
                 </AnimationContainer>
@@ -137,7 +137,7 @@ const Footer = () => {
             <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full">
                 <AnimationContainer delay={0.6}>
                     <p className="text-sm text-muted-foreground mt-8 md:mt-0">
-                        &copy; {new Date().getFullYear()} Linkify INC. All rights reserved.
+                        &copy; {new Date().getFullYear()} Teenvisor Pvt. Ltd. All rights reserved.
                     </p>
                 </AnimationContainer>
             </div>

@@ -2,7 +2,7 @@ import { HelpCircleIcon, LineChartIcon, Link2Icon, LockIcon, NewspaperIcon, QrCo
 
 export const NAV_LINKS = [
     {
-        title: "Services",
+        title: "Features",
         href: "/features",
         menu: [
             {
@@ -32,15 +32,15 @@ export const NAV_LINKS = [
         ],
     },
     {
-        title: "About Us",
+        title: "Pricing",
         href: "/pricing",
     },
     {
-        title: "Our Projects",
+        title: "Forum",
         href: "/enterprise",
     },
     {
-        title: "Team",
+        title: "Resources",
         href: "/resources",
         menu: [
             {
@@ -58,7 +58,7 @@ export const NAV_LINKS = [
         ]
     },
     {
-        title: "Contact Us",
+        title: "About Us",
         href: "/changelog",
     },
 ];

@@ -50,7 +50,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-12">
                         <Link href="/#home">
                             <span className="text-lg font-bold font-heading !leading-none">
-                                Diffuse<span className="text-lg font-bold font-heading !leading-none text-transparent bg-gradient-to-r from-[#2B00FF] to-[#2B00FF] bg-clip-text inline-block">Ai</span>
+                                Teenvisor
                             </span>
                         </Link>
 
@@ -121,10 +121,10 @@ const Navbar = () => {
                         ) : (
                             <div className="flex items-center gap-x-4">
                                 <Link href="/auth/sign-in" className={buttonVariants({ size: "sm", variant: "ghost" })}>
-                                    Join us
+                                    Sign In
                                 </Link>
                                 <Link href="/auth/sign-up" className={buttonVariants({ size: "sm", })}>
-                                    Get in touch!
+                                    Get Started
                                     <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
                                 </Link>
                             </div>

@@ -15,7 +15,7 @@ const LinkShorteningPage = () => {
                     <div className="flex flex-col items-center justify-center py-10 max-w-lg mx-auto">
                         <MagicBadge title="Unique" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Create QR codes for your links
+                            Hello Rojaveni!
                         </h1>
                         <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
                             Enhance your marketing strategy with custom QR codes. Drive engagement and track performance with ease.
