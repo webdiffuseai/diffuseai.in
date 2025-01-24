@@ -93,7 +93,7 @@ export default function Home() {
             {/* Contact Section */}
             <div className="flex justify-center space-x-6 mt-12">
               <a
-                href="mailto:contact@diffuseai.com"
+                href="mailto:infodiffuseai@gmail.com"
                 className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />
