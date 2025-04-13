@@ -22,13 +22,14 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 animate-fade-up leading-tight">
-            <span className="text-gradient">Expanding Humanity's Reach</span> 
+            <span className="text-gradient">Sharp Minds, Shaping Tomorrow</span> 
             <br /> 
-            <span className="text-white">in Space</span>
+            
           </h1>
           
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-12 animate-fade-up" style={{ animationDelay: '200ms' }}>
-            Pioneering satellite manufacturing and microgravity cultivation through innovative engineering and sustainable solutions.
+            We're trailblazers at the forefront of artificial intelligence innovation. Our team of AI specialists develops bespoke solutions that empower organizations to harness the full potential of machine learning, computer vision, and natural language processing technologies.
+
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: '400ms' }}>

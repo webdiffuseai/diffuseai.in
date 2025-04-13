@@ -10,10 +10,10 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              Stellarix <span className="text-stellar-blue">Space</span>
+              Diffuse<span className="text-stellar-blue">AI</span>
             </h3>
             <p className="text-white/70 mb-6 max-w-md">
-              Expanding humanity's reach in space through innovative engineering focused on satellite manufacturing and microgravity cultivation.
+            Crafting Tomorrow, One Algorithm at a Time
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white/60 hover:text-stellar-blue transition-colors" aria-label="LinkedIn">

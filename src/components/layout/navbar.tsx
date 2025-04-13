@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -10,18 +9,14 @@ export const Navbar = () => {
 
   const navLinks = [
     { title: 'Home', href: '/' },
-    { title: 'About', href: '/#about' },
-    { title: 'Services', href: '/services' },
-    { title: 'Projects', href: '/projects' },
-    { title: 'Blog', href: '/blog' },
+    { title: 'Projects', href: '/#about' },
+    { title: 'Achievments', href: '/services' },
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 10);
+      setIsScrolled(window.scrollY > 10);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -34,47 +29,54 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        <Link 
-          to="/" 
-          className="flex items-center space-x-2" 
-          onClick={() => setIsMenuOpen(false)}
-        >
+        {/* Brand */}
+        <Link to="/" className="flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
           <span className="font-bold text-xl text-white hover:opacity-80 transition-opacity">
-            Stellarix <span className="text-stellar-blue">Space</span>
+            Diffuse<span className="text-stellar-blue">AI</span>
           </span>
         </Link>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link, index) => (
-            link.href.startsWith('/#') ? (
-              <a
-                key={index}
-                href={link.href}
-                className="text-sm font-medium text-white/80 hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-stellar-blue after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-              >
-                {link.title}
-              </a>
-            ) : (
-              <Link
-                key={index}
-                to={link.href}
-                className="text-sm font-medium text-white/80 hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-stellar-blue after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-              >
-                {link.title}
-              </Link>
-            )
-          ))}
-          <a 
-            href="/#contact" 
-            className="px-4 py-2 rounded-full border border-stellar-blue text-stellar-blue hover:bg-stellar-blue/10 transition-colors text-sm font-medium"
-          >
-            Contact Us
-          </a>
+        {/* Desktop Nav + Contact */}
+        <div className="hidden md:flex items-center justify-between w-full ml-10">
+          {/* Centered Nav Links */}
+          <div className="flex-1 flex justify-center space-x-8">
+            {navLinks.map((link, index) =>
+              link.href.startsWith('/#') ? (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="text-sm font-medium text-white/80 hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-stellar-blue after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                >
+                  {link.title}
+                </a>
+              ) : (
+                <Link
+                  key={index}
+                  to={link.href}
+                  className="text-sm font-medium text-white/80 hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-stellar-blue after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                >
+                  {link.title}
+                </Link>
+              )
+            )}
+          </div>
+
+          {/* Contact Button */}
+          <div className="flex items-center">
+  <a
+    href="/#contact"
+    className="px-4 py-2 rounded-full border border-[#2b00fe] text-[#2b00fe] bg-black hover:bg-[#2b00fe] hover:text-white hover:shadow-[0_0_25px_#2b00fe] transition-all duration-300 text-sm font-bold font-montserrat"
+  >
+    Contact Us
+  </a>
+</div>
+
+
+
         </div>
 
-        {/* Mobile Menu Toggle */}
-        <button 
+        {/* Mobile Menu Button */}
+        <button
           className="md:hidden text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
@@ -87,7 +89,7 @@ export const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 glass-morphism animate-fade-down">
           <div className="container py-4 flex flex-col space-y-4">
-            {navLinks.map((link, index) => (
+            {navLinks.map((link, index) =>
               link.href.startsWith('/#') ? (
                 <a
                   key={index}
@@ -107,9 +109,9 @@ export const Navbar = () => {
                   {link.title}
                 </Link>
               )
-            ))}
-            <a 
-              href="/#contact" 
+            )}
+            <a
+              href="/#contact"
               className="px-4 py-2 rounded-full border border-stellar-blue text-stellar-blue hover:bg-stellar-blue/10 transition-colors text-sm font-medium self-start"
               onClick={() => setIsMenuOpen(false)}
             >

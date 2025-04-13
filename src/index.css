@@ -40,8 +40,8 @@
   body {
     font-family: 'Montserrat', 'SF Pro Display', sans-serif;
     scroll-behavior: smooth;
-    background: radial-gradient(circle, #00ffd092 2%, transparent 2%);
-    background-size: 4em 7em;
+    background: radial-gradient(circle, #2200ff 2%, transparent 2%);
+    background-size: 5em 8em;
     background-color: #000015;
     color: #ffffff;
     opacity: 1;
@@ -74,7 +74,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(0, 17, 255);
     border-radius: 10px;
   }
 
@@ -84,8 +84,8 @@
 
   /* Selection color */
   ::selection {
-    background: rgba(63, 135, 255, 0.3);
-    color: white;
+    background: rgb(0, 42, 255);
+    color: rgb(255, 255, 255);
   }
 }
 
