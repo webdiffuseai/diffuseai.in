@@ -1,4 +1,3 @@
-
 import { SectionHeading } from '../ui/section-heading';
 
 export const ProblemSolution = () => {
@@ -12,7 +11,7 @@ export const ProblemSolution = () => {
         />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-          <div className="glass-card p-8 relative overflow-hidden animate-fade-up">
+          <div className="glass-card p-8 relative overflow-hidden animate-fade-up backdrop-blur-lg">
             <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-stellar-blue/5 backdrop-blur-xl"></div>
             
             <h3 className="text-2xl font-semibold mb-6 relative z-10">The Problem</h3>
@@ -50,7 +49,7 @@ export const ProblemSolution = () => {
             </div>
           </div>
           
-          <div className="glass-card p-8 relative overflow-hidden animate-fade-up" style={{ animationDelay: '100ms' }}>
+          <div className="glass-card p-8 relative overflow-hidden animate-fade-up backdrop-blur-lg" style={{ animationDelay: '100ms' }}>
             <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-stellar-blue/5 backdrop-blur-xl"></div>
             
             <h3 className="text-2xl font-semibold mb-6 relative z-10">Our Solution</h3>
@@ -106,7 +105,7 @@ export const ProblemSolution = () => {
             className="mb-12"
           />
           
-          <div className="glass-card p-8 animate-fade-up">
+          <div className="glass-card p-8 animate-fade-up backdrop-blur-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-2xl font-semibold mb-6">Specifications</h3>
@@ -189,77 +188,42 @@ export const ProblemSolution = () => {
                     Year 1
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Infrastructure & Partnerships</h3>
-                  <p className="text-white/70">
-                    Establishing infrastructure and forming strategic partnerships with key industry players.
+                  <p className="text-white/80">
+                    Build relationships with space agencies, universities, and manufacturers.
                   </p>
                 </div>
-                
-                <div className="w-10 h-10 rounded-full bg-space-dark border-2 border-stellar-blue flex items-center justify-center z-20 mb-8 md:mb-0">
-                  <div className="w-3 h-3 rounded-full bg-stellar-blue"></div>
-                </div>
-                
-                <div className="md:w-1/2 md:pl-12 animate-fade-left">
-                  {/* Empty for alignment */}
-                </div>
-              </div>
-              
-              <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-1/2 md:pr-12 text-right mb-8 md:mb-0 order-1 md:order-1">
-                  {/* Empty for alignment */}
-                </div>
-                
-                <div className="w-10 h-10 rounded-full bg-space-dark border-2 border-stellar-blue flex items-center justify-center z-20 mb-8 md:mb-0 order-2 md:order-2">
-                  <div className="w-3 h-3 rounded-full bg-stellar-blue"></div>
-                </div>
-                
-                <div className="md:w-1/2 md:pl-12 order-3 md:order-3 animate-fade-right">
-                  <div className="inline-block px-3 py-1 rounded-full bg-stellar-blue/10 text-stellar-blue text-sm font-medium mb-2">
-                    Year 3
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Satellite Module Launch</h3>
-                  <p className="text-white/70">
-                    Launch of satellite module with Controlled Environment Agriculture technology.
-                  </p>
+                <div className="md:w-1/2 flex justify-center items-center animate-fade-left">
+                  <div className="w-20 h-20 bg-stellar-blue/20 rounded-full flex items-center justify-center text-stellar-blue font-bold">1</div>
                 </div>
               </div>
               
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12 text-right mb-8 md:mb-0 animate-fade-right">
                   <div className="inline-block px-3 py-1 rounded-full bg-stellar-blue/10 text-stellar-blue text-sm font-medium mb-2">
-                    Year 5
+                    Year 2
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Space Food System Supply</h3>
-                  <p className="text-white/70">
-                    Full-scale production and supply of space food systems to commercial and government partners.
+                  <h3 className="text-xl font-semibold mb-2">Prototype Development</h3>
+                  <p className="text-white/80">
+                    Finalizing the prototype of SS-PC1 with key systems integration.
                   </p>
                 </div>
-                
-                <div className="w-10 h-10 rounded-full bg-space-dark border-2 border-stellar-blue flex items-center justify-center z-20 mb-8 md:mb-0">
-                  <div className="w-3 h-3 rounded-full bg-stellar-blue"></div>
-                </div>
-                
-                <div className="md:w-1/2 md:pl-12 animate-fade-left">
-                  {/* Empty for alignment */}
+                <div className="md:w-1/2 flex justify-center items-center animate-fade-left">
+                  <div className="w-20 h-20 bg-stellar-blue/20 rounded-full flex items-center justify-center text-stellar-blue font-bold">2</div>
                 </div>
               </div>
               
               <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-1/2 md:pr-12 text-right mb-8 md:mb-0 order-1 md:order-1">
-                  {/* Empty for alignment */}
-                </div>
-                
-                <div className="w-10 h-10 rounded-full bg-space-dark border-2 border-stellar-blue flex items-center justify-center z-20 mb-8 md:mb-0 order-2 md:order-2">
-                  <div className="w-3 h-3 rounded-full bg-stellar-blue"></div>
-                </div>
-                
-                <div className="md:w-1/2 md:pl-12 order-3 md:order-3 animate-fade-right">
+                <div className="md:w-1/2 md:pr-12 text-right mb-8 md:mb-0 animate-fade-right">
                   <div className="inline-block px-3 py-1 rounded-full bg-stellar-blue/10 text-stellar-blue text-sm font-medium mb-2">
-                    Year 9
+                    Year 3
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Planetary Food Production</h3>
-                  <p className="text-white/70">
-                    Development of space pods for sustainable food production on planets and moons.
+                  <h3 className="text-xl font-semibold mb-2">Pilot Testing</h3>
+                  <p className="text-white/80">
+                    Testing the prototype in a controlled environment, aiming for space mission deployment.
                   </p>
+                </div>
+                <div className="md:w-1/2 flex justify-center items-center animate-fade-left">
+                  <div className="w-20 h-20 bg-stellar-blue/20 rounded-full flex items-center justify-center text-stellar-blue font-bold">3</div>
                 </div>
               </div>
             </div>

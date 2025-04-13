@@ -28,18 +28,28 @@ export const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-12 animate-fade-up" style={{ animationDelay: '200ms' }}>
-            We're trailblazers at the forefront of artificial intelligence innovation. Our team of AI specialists develops bespoke solutions that empower organizations to harness the full potential of machine learning, computer vision, and natural language processing technologies.
+            Team of AI specialists develops bespoke solutions that empower organizations to harness the full potential of machine learning, computer vision, and natural language processing technologies.
 
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: '400ms' }}>
-            <a href="#about" className="px-8 py-3 rounded-full bg-stellar-blue hover:bg-stellar-blue/90 text-white font-medium transition-all stellar-shadow hover:translate-y-[-2px]">
-              Learn More
-            </a>
-            <a href="#contact" className="px-8 py-3 rounded-full border border-white/20 hover:border-white/40 backdrop-blur-sm hover:bg-white/5 text-white font-medium transition-all hover:translate-y-[-2px]">
-              Contact Us
-            </a>
-          </div>
+  <a
+    href="#about"
+    className="px-8 py-3 rounded-full bg-[#2b00fe] text-white border border-[#2b00fe] hover:bg-white hover:text-[#2b00fe] transition-all font-medium"
+  >
+    Learn More
+  </a>
+  <a
+    href="#contact"
+    className="px-8 py-3 rounded-full border border-[#2b00fe] text-[#2b00fe] hover:text-white hover:border-[#2b00fe] transition-all font-medium hover:shadow-[0_0_20px_4px_#2b00fe]"
+  >
+    Contact Us
+  </a>
+</div>
+
+
+
+
         </div>
       </div>
       

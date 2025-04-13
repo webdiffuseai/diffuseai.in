@@ -5,13 +5,20 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-space-dark py-16 border-t border-white/5">
+    
+    <div className="rounded-lg p-4 border bg-gradient-to-br from-purple-700 to-indigo-900 text-white">
+
+      <footer className="bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] py-16 border-t border-white/5 rounded-2xl">
+
+
+
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 className="text-xl font-bold mb-4">
-              Diffuse<span className="text-stellar-blue">AI</span>
-            </h3>
+          <h3 className="text-xl font-bold mb-4">
+  Diffuse<span className="text-[#2b00fe]">AI</span>
+</h3>
+
             <p className="text-white/70 mb-6 max-w-md">
             Crafting Tomorrow, One Algorithm at a Time
             </p>
@@ -72,6 +79,6 @@ export const Footer = () => {
           <p>© {currentYear} Stellarix Space Private Limited. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </footer></div>
   );
 };

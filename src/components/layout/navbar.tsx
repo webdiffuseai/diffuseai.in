@@ -31,9 +31,10 @@ export const Navbar = () => {
       <div className="container flex items-center justify-between">
         {/* Brand */}
         <Link to="/" className="flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
-          <span className="font-bold text-xl text-white hover:opacity-80 transition-opacity">
-            Diffuse<span className="text-stellar-blue">AI</span>
-          </span>
+        <span className="font-bold text-xl text-white hover:opacity-80 transition-opacity font-montserrat">
+  Diffuse<span className="text-[#2b00fe]">AI</span>
+</span>
+
         </Link>
 
         {/* Desktop Nav + Contact */}
@@ -112,7 +113,7 @@ export const Navbar = () => {
             )}
             <a
               href="/#contact"
-              className="px-4 py-2 rounded-full border border-stellar-blue text-stellar-blue hover:bg-stellar-blue/10 transition-colors text-sm font-medium self-start"
+              className="px-4 py-2 rounded-full border border-stellar-blue text-stellar-blue hover:bg-stellar-blue/50 transition-colors text-sm font-medium self-start"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
