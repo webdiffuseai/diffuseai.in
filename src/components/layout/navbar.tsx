@@ -66,11 +66,16 @@ export const Navbar = () => {
           <div className="flex items-center">
   <a
     href="/#contact"
-    className="px-4 py-2 rounded-full border border-[#2b00fe] text-[#2b00fe] bg-black hover:bg-[#2b00fe] hover:text-white hover:shadow-[0_0_25px_#2b00fe] transition-all duration-300 text-sm font-bold font-montserrat"
+    className="group px-4 py-2 rounded-full border border-[#2b00fe] bg-black hover:bg-[#2b00fe] hover:shadow-[0_0_25px_#2b00fe] transition-all duration-300 text-sm font-bold font-montserrat"
   >
-    Contact Us
+    <span className="bg-gradient-to-b from-[#48c4cc] to-[#0003ff] bg-clip-text text-transparent group-hover:text-white group-hover:bg-none transition-all duration-300">
+      Contact Us ▶
+    </span>
   </a>
 </div>
+
+
+
 
 
 

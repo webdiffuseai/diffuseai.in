@@ -6,10 +6,17 @@ export const Footer = () => {
   
   return (
     
-    <div className="rounded-lg p-4 border bg-gradient-to-br from-purple-700 to-indigo-900 text-white">
+    <div className="relative rounded-lg p-8 bg-[radial-gradient(ellipse_at_top_left,_#2b00fe_0%,_#0f0086_50%,_#090032_100%)] text-white shadow-[0_0_30px_rgba(43,0,254,0.2)] w-full overflow-hidden">
 
-      <footer className="bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] py-16 border-t border-white/5 rounded-2xl">
+    {/* Top blur overlay */}
+    <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-[#090032] to-transparent z-10 rounded-t-lg pointer-events-none"></div>
+  
+    {/* Content */}
+    <div className="relative z-20">
+      {/* Your content here */}
+    </div>
 
+  <footer className="bg-black py-10 px-7 border-t-9 border-[#2b00fe]/40 rounded-2xl shadow-[inset_0_0_30px_rgba(15,0,134,0.3)]">
 
 
       <div className="container">
@@ -49,6 +56,12 @@ export const Footer = () => {
               <li><a href="#team" className="text-white/70 hover:text-stellar-blue transition-colors">Our Team</a></li>
               <li><a href="#gallery" className="text-white/70 hover:text-stellar-blue transition-colors">Gallery</a></li>
               <li><a href="#contact" className="text-white/70 hover:text-stellar-blue transition-colors">Contact</a></li>
+              <li><a href="#about" className="text-white/70 hover:text-stellar-blue transition-colors">About Us</a></li>
+              <li><a href="#solution" className="text-white/70 hover:text-stellar-blue transition-colors">Our Solutions</a></li>
+              <li><a href="#team" className="text-white/70 hover:text-stellar-blue transition-colors">Our Team</a></li>
+              <li><a href="#gallery" className="text-white/70 hover:text-stellar-blue transition-colors">Gallery</a></li>
+              <li><a href="#contact" className="text-white/70 hover:text-stellar-blue transition-colors">Contact</a></li>
+
             </ul>
           </div>
           
@@ -79,6 +92,7 @@ export const Footer = () => {
           <p>© {currentYear} Stellarix Space Private Limited. All rights reserved.</p>
         </div>
       </div>
+      
     </footer></div>
   );
 };
