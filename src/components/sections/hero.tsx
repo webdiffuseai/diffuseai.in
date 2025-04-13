@@ -16,10 +16,23 @@ export const Hero = () => {
       
       <div className="container mx-auto px-6 py-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center bg-white/5 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-white/80 mb-8 animate-fade-down">
-            <span className="inline-block w-2 h-2 rounded-full bg-stellar-blue mr-2 animate-pulse"></span>
-            Innovating space technology since 2021
-          </div>
+        <div className="inline-flex items-center bg-white/5 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-white/80 mb-8 animate-fade-down">
+  <video
+    className="h-12 rounded-md pointer-events-none select-none"
+    src="public/0413 (1)(4).mov"
+    autoPlay
+    loop
+    muted
+    playsInline
+    disablePictureInPicture
+    controls={false}
+    preload="auto"
+    onContextMenu={(e) => e.preventDefault()}
+  />
+</div>
+
+
+
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 animate-fade-up leading-tight">
             <span className="text-gradient">Sharp Minds, Shaping Tomorrow</span> 
