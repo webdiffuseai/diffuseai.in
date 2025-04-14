@@ -6,7 +6,7 @@ export const Footer = () => {
   
   return (
     
-    <div className="relative rounded-lg p-8 bg-[radial-gradient(ellipse_at_top_left,_#2b00fe_0%,_#0f0086_50%,_#090032_100%)] text-white shadow-[0_0_30px_rgba(43,0,254,0.2)] w-full overflow-hidden">
+    <div className="relative rounded-lg p-16 bg-[radial-gradient(ellipse_at_top_left,_#2b00fe_0%,_#0f0086_50%,_#090032_100%)] text-white shadow-[0_0_30px_rgba(43,0,254,0.2)] w-full overflow-hidden">
 
     {/* Top blur overlay */}
     <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-[#090032] to-transparent z-10 rounded-t-lg pointer-events-none"></div>
@@ -16,7 +16,7 @@ export const Footer = () => {
       {/* Your content here */}
     </div>
 
-  <footer className="bg-black py-10 px-7 border-t-9 border-[#2b00fe]/40 rounded-2xl shadow-[inset_0_0_30px_rgba(15,0,134,0.3)]">
+  <footer className="bg-black py-10 px-2 border-t-9 border-[#2b00fe]/40 rounded-2xl shadow-[inset_0_0_30px_rgba(15,0,134,0.3)]">
 
 
       <div className="container">
@@ -75,13 +75,13 @@ export const Footer = () => {
               <li className="flex items-start">
                 <span className="mr-2 mt-1">✉️</span>
                 <a href="mailto:info@stellarixspace.com" className="hover:text-stellar-blue transition-colors">
-                  info@stellarixspace.com
+                  info@diffuseai.com
                 </a>
               </li>
               <li className="flex items-start">
                 <span className="mr-2 mt-1">🌐</span>
                 <a href="http://www.stellarixspace.com" target="_blank" rel="noopener noreferrer" className="hover:text-stellar-blue transition-colors">
-                  www.stellarixspace.com
+                www.diffuseai.in
                 </a>
               </li>
             </ul>
