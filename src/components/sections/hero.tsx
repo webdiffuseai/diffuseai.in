@@ -19,7 +19,7 @@ export const Hero = () => {
         <div className="inline-flex items-center bg-white/5 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-white/80 mb-8 animate-fade-down">
   <video
     className="h-12 rounded-md pointer-events-none select-none"
-    src="public/0413 (1)(4).mov"
+    src="hero.mov"
     autoPlay
     loop
     muted
