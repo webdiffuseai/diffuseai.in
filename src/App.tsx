@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,9 +6,13 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import Index from "./pages/Index";
 import Projects from "./pages/Projects";
-import About from "./pages/About";
+import About from "./pages/Achievements";
 import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
+
+const Achievements = () => {
+    return <div>Achievements Page</div>;
+};
 
 // Scroll to top when navigating
 const ScrollToTop = () => {
@@ -41,7 +44,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/achievement" element={<Achievements />} />
           <Route path="/gallery" element={<Gallery />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
