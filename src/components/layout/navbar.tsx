@@ -9,8 +9,8 @@ export const Navbar = () => {
 
   const navLinks = [
     { title: 'Home', href: '/' },
-    { title: 'Projects', href: '/#about' },
-    { title: 'Achievments', href: '/services' },
+    { title: 'Projects', href: 'Projects' },
+    { title: 'Achievments', href: '/achievments' },
   ];
 
   useEffect(() => {
