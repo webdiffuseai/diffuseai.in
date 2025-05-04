@@ -33,7 +33,7 @@ const Blog = () => {
     },
     {
       title: "Space Sustainability: Addressing the Orbital Debris Challenge",
-      excerpt: "Examining solutions to the growing problem of space debris and how responsible satellite design can help mitigate risks.",
+      excerpt: "Examining solutions to the growing ExpertiseServices of space debris and how responsible satellite design can help mitigate risks.",
       author: "Sunita Rao",
       date: new Date("2023-08-22"),
       category: "Sustainability",
