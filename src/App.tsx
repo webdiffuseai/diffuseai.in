@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import Index from "./pages/Index";
 import Projects from "./pages/Projects";
-import About from "./pages/Achievements";
 import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 
