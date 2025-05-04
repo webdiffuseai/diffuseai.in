@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { Hero } from '@/components/sections/hero';
-import { ProblemSolution } from '@/components/sections/problem-solution';
+import {ExpertiseServices } from '@/components/sections/ExpertiseServices-solution';
 import { Team } from '@/components/sections/team';
 import { Contact } from '@/components/sections/contact';
 
@@ -45,9 +45,8 @@ const Index = () => {
       <main>
         {/* Hero Section */}
         <Hero />
-        
         {/* Problem & Solution Section */}
-        <ProblemSolution />
+        <ExpertiseServices />
         
         {/* Team Section */}
         <Team />
