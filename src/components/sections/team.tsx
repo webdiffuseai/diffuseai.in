@@ -16,26 +16,26 @@ export const Team = () => {
     {
       name: 'Sujan Saitej',
       title: 'Founder & CEO ',
-      bio: 'Transforming Industries with Intelligent Solutions | AI Student Community Ambassador | Agentic AI & LLM Engineer',
+      bio: "AI Student Community Leader | Agentic AI & LLM Engineer | One of India's Top 10 AI Programmers (G20-2023) | Alumnus of Tamil Nadu Govt. School",
       linkedin: 'https://www.linkedin.com/in/sujansaitej/',
       whatsapp: 'https://wa.me/919361860665',
-      email: 'mailto:sujan@example.com'
+      email: 'mailto:sujansaitej07@gmail.com '
     },
     {
-      name: 'Sheik Mohammed Ali M',
+      name: 'Sheik Md Ali ',
       title: 'Co-Founder & COO',
       bio: 'Aspiring AI Enthusiast | Python Developer | Web Developer | Continuous Learner and Tech Enthusiast',
       linkedin: 'https://www.linkedin.com/in/sheikmdali/',
-      whatsapp: 'https://wa.me/1234567891',
-      email: 'mailto:sheik@example.com'
+      whatsapp: 'https://wa.me/916381773978',
+      email: 'mailto: shaikmohammedali813@gmail.com'
     },
     {
-      name: 'Vishnu S',
+      name: 'Vishnu Sudharshan',
       title: 'Co-Founder & CTO ',
       bio: 'AISC Ambassador | Graphic designer | Hardware & Software Developer',
       linkedin: 'https://www.linkedin.com/in/vsnu02/',
-      whatsapp: 'https://wa.me/1234567892',
-      email: 'mailto:vishnu@example.com'
+      whatsapp: 'https://wa.me/916382834651',
+      email: 'mailto:vsnu4diffuseai@gmail.com'
     }
   ];
 
