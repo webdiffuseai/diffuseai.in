@@ -40,10 +40,9 @@ export const Hero = () => {
             
           </h1>
           
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-12 animate-fade-up" style={{ animationDelay: '200ms' }}>
-            Team of AI specialists develops bespoke solutions that empower organizations to harness the full potential of machine learning, computer vision, and natural language processing technologies.
-
-          </p>
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-12 animate-fade-up"style={{ animationDelay: '200ms' }}>
+                      Transforming Industries with Intelligent Solutions. We build AI powered tools that automate, optimize, and elevate operations driving innovation across sectors with smart, scalable technologies.
+           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: '400ms' }}>
   <a
