@@ -5,10 +5,23 @@ export const Footer = () => {
   return (
     <div className="relative rounded-lg p-16 bg-[radial-gradient(ellipse_at_top_left,_#2b00fe_0%,_#0f0086_50%,_#090032_100%)] text-white shadow-[0_0_30px_rgba(43,0,254,0.2)] w-full overflow-hidden">
       
-      {/* === PULSING GLOW EFFECT === */}
+      {/* === ENHANCED PULSING GLOW EFFECT === */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-20 -left-20 w-80 h-80 bg-blue-600/10 rounded-full filter blur-3xl animate-pulse-slow"></div>
-        <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-indigo-700/15 rounded-full filter blur-3xl animate-pulse-slower"></div>
+        <div className="absolute -top-20 -left-20 w-80 h-80 bg-blue-600/15 rounded-full filter blur-3xl animate-pulse-slow"></div>
+        <div className="absolute top-40 left-1/3 w-60 h-60 bg-indigo-500/20 rounded-full filter blur-3xl animate-pulse-slower"></div>
+        <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-indigo-700/20 rounded-full filter blur-3xl animate-pulse-slower"></div>
+        
+        {/* Additional animated elements */}
+        <div className="absolute top-1/4 right-1/3 w-40 h-40 bg-blue-500/10 rounded-full filter blur-2xl animate-float"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-50 h-50 bg-violet-600/15 rounded-full filter blur-2xl animate-float-slow"></div>
+      </div>
+
+      {/* === MOVING PARTICLES === */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div className="absolute h-2 w-2 bg-blue-400 rounded-full top-1/4 left-1/5 animate-particle-1"></div>
+        <div className="absolute h-1 w-1 bg-indigo-300 rounded-full top-1/3 right-1/4 animate-particle-2"></div>
+        <div className="absolute h-2 w-2 bg-purple-400 rounded-full bottom-1/4 left-1/3 animate-particle-3"></div>
+        <div className="absolute h-1 w-1 bg-blue-300 rounded-full bottom-1/3 right-1/5 animate-particle-2"></div>
       </div>
 
       {/* === TOP BLUR OVERLAY === */}
@@ -72,15 +85,15 @@ export const Footer = () => {
                 <ul className="space-y-3 text-white/70">
                   <li className="flex items-start group">
                     <span className="mr-2 mt-1 group-hover:text-[#2b00fe] transition-all">📞</span>
-                    <span className="group-hover:text-[#2b00fe] group-hover:underline">+91 8122211194</span>
+                    <span className="group-hover:text-[#2b00fe] group-hover:underline">+91 93618 60665</span>
                   </li>
                   <li className="flex items-start group">
                     <span className="mr-2 mt-1 group-hover:text-[#2b00fe] transition-all">✉️</span>
                     <a 
-                      href="mailto:info@diffuseai.com" 
+                      href="mailto:infodiffuseai@gmail.com" 
                       className="hover:text-[#2b00fe] hover:underline transition-all"
                     >
-                      info@diffuseai.com
+                      infodiffuseai@gmail.com
                     </a>
                   </li>
                   <li className="flex items-start group">
@@ -105,6 +118,67 @@ export const Footer = () => {
           </div>
         </footer>
       </div>
+      
+      {/* Add CSS for new animations */}
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0) translateX(0); }
+          25% { transform: translateY(-15px) translateX(15px); }
+          50% { transform: translateY(0) translateX(30px); }
+          75% { transform: translateY(15px) translateX(15px); }
+        }
+        
+        @keyframes float-slow {
+          0%, 100% { transform: translateY(0) translateX(0); }
+          25% { transform: translateY(-10px) translateX(-10px); }
+          50% { transform: translateY(0) translateX(-20px); }
+          75% { transform: translateY(10px) translateX(-10px); }
+        }
+        
+        @keyframes particle-1 {
+          0%, 100% { transform: translateY(0) translateX(0); opacity: 0.5; }
+          25% { transform: translateY(-100px) translateX(50px); opacity: 1; }
+          50% { transform: translateY(-200px) translateX(100px); opacity: 0.7; }
+          75% { transform: translateY(-300px) translateX(50px); opacity: 0.3; }
+          100% { transform: translateY(-400px) translateX(0); opacity: 0; }
+        }
+        
+        @keyframes particle-2 {
+          0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+          25% { transform: translateY(-50px) translateX(-70px); opacity: 0.7; }
+          50% { transform: translateY(-100px) translateX(-140px); opacity: 1; }
+          75% { transform: translateY(-150px) translateX(-70px); opacity: 0.7; }
+          100% { transform: translateY(-200px) translateX(0); opacity: 0.3; }
+        }
+        
+        @keyframes particle-3 {
+          0%, 100% { transform: translateY(0) translateX(0); opacity: 0.4; }
+          25% { transform: translateY(70px) translateX(50px); opacity: 0.8; }
+          50% { transform: translateY(140px) translateX(100px); opacity: 1; }
+          75% { transform: translateY(70px) translateX(50px); opacity: 0.8; }
+          100% { transform: translateY(0) translateX(0); opacity: 0.4; }
+        }
+        
+        .animate-float {
+          animation: float 15s ease-in-out infinite;
+        }
+        
+        .animate-float-slow {
+          animation: float-slow 20s ease-in-out infinite;
+        }
+        
+        .animate-particle-1 {
+          animation: particle-1 15s linear infinite;
+        }
+        
+        .animate-particle-2 {
+          animation: particle-2 12s linear infinite;
+        }
+        
+        .animate-particle-3 {
+          animation: particle-3 18s linear infinite;
+        }
+      `}</style>
     </div>
   );
 };
