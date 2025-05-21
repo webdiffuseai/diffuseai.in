@@ -14,25 +14,26 @@ export const SectionHeading = ({ overline, title, description }) => {
 export const Team = () => {
   const founders = [
     {
-      name: 'Sujan Saitej',
-      title: 'Founder & CEO ',
-      bio: "AI Student Community Leader | Agentic AI & LLM Engineer | One of India's Top 10 AI Programmers (G20-2023) | Alumnus of Tamil Nadu Govt. School",
-      linkedin: 'https://www.linkedin.com/in/sujansaitej/',
-      whatsapp: 'https://wa.me/919361860665',
-      email: 'mailto:sujansaitej07@gmail.com '
-    },
-    {
       name: 'Sheik Md Ali ',
       title: 'Co-Founder & COO',
-      bio: 'Aspiring AI Enthusiast | Python Developer | Web Developer | Continuous Learner and Tech Enthusiast',
+      bio: 'A driven AI enthusiast and skilled Python and web developer. He leads with passion, continuously learning and pushing technological boundaries to drive innovation and growth at Diffuse AI.',
       linkedin: 'https://www.linkedin.com/in/sheikmdali/',
       whatsapp: 'https://wa.me/916381773978',
       email: 'mailto: shaikmohammedali813@gmail.com'
     },
     {
+      name: 'Sujan Saitej',
+      title: 'Founder & CEO ',
+      bio: "A powerful & young leader driving AI innovation and building strong tech networks to advance India’s AI ecosystem. His passion fuels transformative progress and empowers the next generation in AI development.",
+      linkedin: 'https://www.linkedin.com/in/sujansaitej/',
+      whatsapp: 'https://wa.me/919361860665',
+      email: 'mailto:sujansaitej07@gmail.com '
+    },
+    
+    {
       name: 'Vishnu Sudharshan',
       title: 'Co-Founder & CTO ',
-      bio: 'AISC Ambassador | Graphic designer | Hardware & Software Developer',
+      bio: 'A silent yet powerful mind driving innovation at Org. AISC Ambassador and versatile developer, he blends graphic design with hardware and software expertise to create impactful tech solutions.',
       linkedin: 'https://www.linkedin.com/in/vsnu02/',
       whatsapp: 'https://wa.me/916382834651',
       email: 'mailto:vsnu4diffuseai@gmail.com'
@@ -90,42 +91,44 @@ export const Team = () => {
           description="Meet the talented individuals who are pushing the boundaries of AI technology."
         />
 
-        <div className="mt-12">
-          <h3 className="text-2xl font-semibold mb-8 text-gradient">Founding Team</h3>
+<div className="mt-12">
+  <h3 className="text-2xl font-semibold mb-8 text-gradient text-center">Founding Team</h3>
+
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {founders.map((member, index) => (
-              <div
-                key={index}
-                className="glass-card p-6 rounded-lg bg-opacity-20 bg-white backdrop-blur-sm"
-              >
-                <h4 className="text-xl font-semibold mb-1">{member.name}</h4>
-                <div className="text-sm text-blue-400 mb-3">{member.title}</div>
-                <p className="text-gray-300 text-sm mb-4">{member.bio}</p>
-                <div className="flex gap-4 mt-2">
-                  {member.linkedin && (
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                      <LinkedinIcon />
-                    </a>
-                  )}
-                  {member.whatsapp && (
-                    <a href={member.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                      <WhatsappIcon />
-                    </a>
-                  )}
-                  {member.email && (
-                    <a href={member.email} target="_blank" rel="noopener noreferrer" aria-label="Email">
-                      <EmailIcon />
-                    </a>
-                  )}
-                </div>
-              </div>
-            ))}
+  {founders.map((member, index) => (
+    <div
+      key={index}
+      className="glass-card p-6 rounded-lg bg-opacity-20 bg-white backdrop-blur-sm"
+    >
+      <h4 className="text-xl font-semibold mb-1 text-center">{member.name}</h4>
+      <div className="text-sm text-blue-400 mb-3 text-center">{member.title}</div>
+      <p className="text-gray-300 text-sm mb-4 text-center">{member.bio}</p>
+      <div className="flex gap-4 mt-2 justify-center">
+        {member.linkedin && (
+          <a href={member.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <LinkedinIcon />
+          </a>
+        )}
+        {member.whatsapp && (
+          <a href={member.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <WhatsappIcon />
+          </a>
+        )}
+        {member.email && (
+          <a href={member.email} target="_blank" rel="noopener noreferrer" aria-label="Email">
+            <EmailIcon />
+          </a>
+        )}
+      </div>
+    </div>
+  ))}
+
           </div>
         </div>
 
-        <div className="mt-20">
-          <h3 className="text-2xl font-semibold mb-8 text-gradient">Advisory Board</h3>
+  <div className="mt-20">
+    <h3 className="text-2xl font-semibold mb-8 text-gradient text-center">Advisory Board</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {advisors.map((advisor, index) => (
