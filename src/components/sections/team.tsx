@@ -1,4 +1,5 @@
 import React from 'react';
+import Sujan from '@/src/components/sections/sai.jpg'; // adjust path accordingly
 
 // This would typically be in a separate file
 export const SectionHeading = ({ overline, title, description }) => {
@@ -19,7 +20,8 @@ export const Team = () => {
       bio: "AI Student Community Leader | Agentic AI & LLM Engineer | One of India's Top 10 AI Programmers (G20-2023) | Alumnus of Tamil Nadu Govt. School",
       linkedin: 'https://www.linkedin.com/in/sujansaitej/',
       whatsapp: 'https://wa.me/919361860665',
-      email: 'mailto:sujansaitej07@gmail.com '
+      email: 'mailto:sujansaitej07@gmail.com ',
+      Image: 'Sujan',
     },
     {
       name: 'Sheik Md Ali ',
@@ -29,14 +31,16 @@ export const Team = () => {
       whatsapp: 'https://wa.me/916381773978',
       email: 'mailto: shaikmohammedali813@gmail.com'
     },
-    {
-      name: 'Vishnu Sudharshan',
-      title: 'Co-Founder & CTO ',
-      bio: 'AISC Ambassador | Graphic designer | Hardware & Software Developer',
-      linkedin: 'https://www.linkedin.com/in/vsnu02/',
-      whatsapp: 'https://wa.me/916382834651',
-      email: 'mailto:vsnu4diffuseai@gmail.com'
-    }
+   {
+  name: 'Vishnu Sudharshan',
+  title: 'Co-Founder & CTO',
+  bio: 'AISC Ambassador | Graphic designer | Hardware & Software Developer',
+  linkedin: 'https://www.linkedin.com/in/vsnu02/',
+  whatsapp: 'https://wa.me/916382834651',
+  email: 'mailto:vsnu4diffuseai@gmail.com',
+  image: 'sai.jpg' // assuming it's in your public/images folder
+}
+
   ];
 
   const advisors = [
@@ -82,8 +86,8 @@ export const Team = () => {
   );
 
   return (
-    <section id="team" className="py-24 relative">
-      <div className="container mx-auto px-4">
+    <section id="team" className="py-4 relative">
+      <div className="container mx-auto px-14">
         <SectionHeading
           overline="Our Team"
           title="The Innovators"
@@ -93,16 +97,16 @@ export const Team = () => {
         <div className="mt-12">
           <h3 className="text-2xl font-semibold mb-8 text-gradient">Founding Team</h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {founders.map((member, index) => (
               <div
                 key={index}
-                className="glass-card p-6 rounded-lg bg-opacity-20 bg-white backdrop-blur-sm"
+                className="glass-card p-10 rounded-lg bg-opacity-2 bg-white backdrop-blur-sm"
               >
                 <h4 className="text-xl font-semibold mb-1">{member.name}</h4>
                 <div className="text-sm text-blue-400 mb-3">{member.title}</div>
                 <p className="text-gray-300 text-sm mb-4">{member.bio}</p>
-                <div className="flex gap-4 mt-2">
+                <div className="flex gap-4 mt-4">
                   {member.linkedin && (
                     <a href={member.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <LinkedinIcon />
