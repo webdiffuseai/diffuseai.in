@@ -1,74 +1,79 @@
-
-import { ArrowDown } from 'lucide-react';
+import { useRef, useState } from 'react';
 
 export const Hero = () => {
+  const containerRef = useRef(null);
+  const [videoIndex, setVideoIndex] = useState(0);
+  const [isClicked, setIsClicked] = useState(false);
+  const videoSources = ['/hero.mov', '/hero2.mov'];
+
+  const handleVideoClick = () => {
+    setIsClicked(true);                // Start the blur + shrink
+    setTimeout(() => {
+      setIsClicked(false);             // Remove blur + shrink after animation
+      setVideoIndex((prevIndex) => (prevIndex + 1) % videoSources.length);
+    }, 300);                          // Match transition duration (300ms)
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-space-darker via-space-blue/50 to-space-purple/30"></div>
-        
-        {/* Blue orbital path */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-stellar-blue/20 rounded-full opacity-30 animate-rotate-slow"></div>
-        
-        {/* Inner orbital path */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-stellar-cyan/10 rounded-full opacity-20" style={{ animationDuration: '15s' }}></div>
-      </div>
-      
-      <div className="container mx-auto px-6 py-12 relative z-10">
+    <section className="relative min-h-screen flex items-center pt-20" ref={containerRef}>
+      {/* ...background stuff omitted for brevity... */}
+
+      <div className="container mx-auto px-16 py-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-        <div className="inline-flex items-center bg-white/5 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-white/80 mb-8 animate-fade-down">
-  <video
-    className="h-12 rounded-md pointer-events-none select-none"
-    src="hero.mov"
-    autoPlay
-    loop
-    muted
-    playsInline
-    disablePictureInPicture
-    controls={false}
-    preload="auto"
-    onContextMenu={(e) => e.preventDefault()}
-  />
-</div>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 animate-fade-up leading-[1.25]">
+            <div className="pb-1 flex justify-center items-center gap-2 flex-wrap">
+              <span className="bg-gradient-to-t from-[#1c00ff] to-[#00baff] bg-clip-text text-transparent">
+                Sharp{' '}
+                <video
+                  src={videoSources[videoIndex]}
+                  width={isClicked ? 52 : 55}
+                  height={isClicked ? 52 : 55}
+                  className={`inline-block rounded-md cursor-pointer -translate-y-1.5 relative ${isClicked ? 'blur-sm' : ''}`}
+                  style={{ transition: 'filter 0.3s ease, width 0.3s ease, height 0.3s ease' }}
+                  muted
+                  playsInline
+                  autoPlay
+                  loop
+                  disablePictureInPicture
+                  controls={false}
+                  onClick={handleVideoClick}
+                />
+                <span className="bg-gradient-to-t from-[#1c00ff] to-[#00baff] bg-clip-text text-transparent">
+                  {''}Inds
+                </span>
+              </span>
+            </div>
 
-
-
-          
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 animate-fade-up leading-tight">
-            <span className="text-gradient">Sharp Minds, Shaping Tomorrow</span> 
-            <br /> 
-            
+            {/* rest of your content */}
+            <div className="pb-1 text-center">
+              <span className="inline-block bg-gradient-to-t from-[#1c00ff] to-[#00baff] bg-clip-text text-transparent">
+                Shaping Tomorrow
+              </span>
+            </div>
           </h1>
-          
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-12 animate-fade-up"style={{ animationDelay: '200ms' }}>
-                      Transforming Industries with Intelligent Solutions. We build AI powered tools that automate, optimize, and elevate operations driving innovation across sectors with smart, scalable technologies.
-           </p>
-          
+          <p
+            className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-12 animate-fade-up"
+            style={{ animationDelay: '200ms' }}
+          >
+            Transforming Industries with Intelligent Solutions. We build AI powered tools that automate, optimize, and elevate operations driving innovation across sectors with smart, scalable
+            technologies.
+          </p>
+
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: '400ms' }}>
-  <a
-    href="#about"
-    className="px-8 py-3 rounded-full bg-[#2b00fe] text-white border border-[#2b00fe] hover:bg-white hover:text-[#2b00fe] transition-all font-medium"
-  >
-    Learn More
-  </a>
-  <a
-    href="#contact"
-    className="px-8 py-3 rounded-full border border-[#2b00fe] text-[#2b00fe] hover:text-white hover:border-[#2b00fe] transition-all font-medium hover:shadow-[0_0_20px_4px_#2b00fe]"
-  >
-    Contact Us
-  </a>
-</div>
-
-
-
-
+            <a
+              href="#about"
+              className="px-8 py-3 rounded-full bg-[#2b00fe] text-[#000015] border border-[#2b00fe] hover:bg-white hover:text-[#2b00fe] transition-all duration-500 font-medium"
+            >
+              Learn More
+            </a>
+            <a
+              href="#contact"
+              className="px-8 py-3 rounded-full border border-[#2b00fe] text-[#2b00fe] hover:text-white hover:border-[#2b00fe] transition-all duration-500 font-medium hover:shadow-[0_0_20px_4px_#2b00fe]"
+            >
+              Contact Us
+            </a>
+          </div>
         </div>
-      </div>
-      
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <a href="#about" className="text-white/80 hover:text-white transition-colors">
-          <ArrowDown size={24} />
-        </a>
       </div>
     </section>
   );
