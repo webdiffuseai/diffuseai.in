@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React from "react";
+=======
+ import React from "react";
+>>>>>>> 0e55ee95659c1e74bb5cc030060f8fc7aafbf08b
 
 interface Position {
   x: number;
