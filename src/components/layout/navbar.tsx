@@ -25,13 +25,13 @@ export const Navbar = () => {
     <nav
       className={cn(
         'fixed top-0 inset-x-0 z-50 transition-all duration-300 ease-in-out py-4',
-        isScrolled ? 'backdrop-blur-xl bg-space-dark/80 py-3 shadow-lg' : 'bg-transparent'
+        isScrolled ? 'backdrop-blur-xl bg-space-dark/10  0 py-3 shadow-lg' : 'bg-transparent'
       )}
     >
       <div className="container flex items-center justify-between">
         {/* Brand */}
         <Link to="/" className="flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
-        <span className="font-bold text-xl text-white hover:opacity-80 transition-opacity font-montserrat">
+        <span className="font-bold text-xl text-black hover:opacity-80 transition-opacity font-montserrat">
   Diffuse<span className="text-[#2b00fe]">AI</span>
 </span>
 
@@ -46,7 +46,7 @@ export const Navbar = () => {
                 <a
                   key={index}
                   href={link.href}
-                  className="text-sm font-medium text-white/80 hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-stellar-blue after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                  className="text-sm font-medium text-[#2b00fe] hover:text-[#2b00fe] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[40px] after:bg-[#2b00fe] after:scale-x-0 hover:after:scale-x-200 after:transition-transform after:duration-300"
                 >
                   {link.title}
                 </a>
@@ -54,7 +54,7 @@ export const Navbar = () => {
                 <Link
                   key={index}
                   to={link.href}
-                  className="text-sm font-medium text-white/80 hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-stellar-blue after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                  className="text-sm font-medium text-[#000000] hover:text-[#000000] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-[#2b00fe] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
                 >
                   {link.title}
                 </Link>
@@ -66,9 +66,9 @@ export const Navbar = () => {
           <div className="flex items-center">
   <a
     href="/#contact"
-    className="group px-4 py-2 rounded-full border border-[#2b00fe] bg-black hover:bg-[#2b00fe] hover:shadow-[0_0_25px_#2b00fe] transition-all duration-300 text-sm font-bold font-montserrat"
+    className="group px-4 py-2 rounded-full border border-[#2b00fe] bg-white hover:bg-[#2b00fe] hover:shadow-[0_0_25px_#2b00fe] transition-all duration-300 text-sm font-bold font-montserrat"
   >
-    <span className="bg-gradient-to-b from-[#48c4cc] to-[#0003ff] bg-clip-text text-transparent group-hover:text-white group-hover:bg-none transition-all duration-300">
+    <span className="bg-gradient-to-b from-[#2b00fe] to-[#0f0086] bg-clip-text text-transparent group-hover:text-white group-hover:bg-none transition-all duration-300">
       Contact Us ↝
     </span>
   </a>

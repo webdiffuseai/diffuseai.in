@@ -42,8 +42,8 @@
     scroll-behavior: smooth;
     background: radial-gradient(circle, #2200ff 2%, transparent 2%);
     background-size: 5em 8em;
-    background-color: #000015;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #0015ff;
     opacity: 1;
     animation: animate 44s linear infinite;
     @apply antialiased overflow-x-hidden;
@@ -107,6 +107,12 @@
     background-image: linear-gradient(180deg, #0011ff, #005eff);
   }
   
+  .gradient-text {
+    background: linear-gradient(to right, #00a3ff, #0047ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
   
   
   .stellar-shadow {
@@ -135,4 +141,65 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
   }
+}
+
+@keyframes marquee-alt {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-alt {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-alt {
+  animation: marquee-alt 40s linear infinite alternate;
+}
+
+.fade-edges {
+  position: relative;
+}
+
+.fade-edges::before,
+.fade-edges::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 380px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.fade-edges::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff, transparent);
+}
+
+.fade-edges::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff, transparent);
+}
+
+
+
+.animate-marquee-alt:hover {
+  animation-play-state: paused;
+}
+
+
+html, body {
+  overflow-y: scroll;
+  overscroll-behavior: auto;
 }
