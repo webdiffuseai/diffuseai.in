@@ -43,36 +43,6 @@ export const ExpertiseServices = () => {
               <p className="text-white/80 text-sm md:text-base mb-4">
                 {service.description}
               </p>
-
-              {/* Up button only on card 1 */}
-              {idx === 0 && (
-                <button
-                  className="scroll-btn-card text-bold bg-white rounded-full absolute top-2 right-2 md:top-4 md:right-4 text-xs md:text-sm py-1 px-2 md:py-2 md:px-4"
-                  onClick={() => {
-                    window.scrollTo({
-                      top: window.scrollY - window.innerHeight,
-                      behavior: "smooth",
-                    });
-                  }}
-                >
-                  - Go UP -
-                </button>
-              )}
-
-              {/* Down button only on last card */}
-              {idx === services.length - 1 && (
-                <button
-                  className="scroll-btn-card absolute bottom-2 right-2 md:bottom-4 md:right-4 text-xs md:text-base py-1 px-2 md:py-2 md:px-4"
-                  onClick={() => {
-                    window.scrollTo({
-                      top: window.scrollY + window.innerHeight,
-                      behavior: "smooth",
-                    });
-                  }}
-                >
-                  ↓Go Down
-                </button>
-              )}
             </div>
           </div>
         </ScrollStackItem>
