@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,6 +30,12 @@
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
     --radius: 0.5rem;
+    /* New color variables for enhanced UI */
+    --stellar-blue: 217 91.2% 59.8%;
+    --stellar-blue-dark: 220 90% 45%;
+    --stellar-cyan: 180 100% 50%;
+    --space-dark: 240 10% 3.9%;
+    --space-light: 0 0% 98%;
   }
 
   * {
@@ -65,21 +70,22 @@
 
   /* Webkit scrollbar customization */
   ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
   }
 
   ::-webkit-scrollbar-track {
     background: transparent;
+    border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(43, 0, 255, 0.3);
     border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(43, 0, 255, 0.6);
   }
 
   /* Selection color */
@@ -113,7 +119,25 @@
     -webkit-text-fill-color: transparent;
   }
   
+  .stellar-blue {
+    color: hsl(var(--stellar-blue));
+  }
   
+  .stellar-blue-bg {
+    background-color: hsl(var(--stellar-blue));
+  }
+  
+  .stellar-blue-border {
+    border-color: hsl(var(--stellar-blue));
+  }
+  
+  .stellar-blue-text {
+    color: hsl(var(--stellar-blue));
+  }
+  
+  .stellar-blue-hover:hover {
+    background-color: hsl(var(--stellar-blue-dark));
+  }
   
   .stellar-shadow {
     @apply shadow-[0_0_30px_rgba(63,135,255,0.3)];
@@ -140,6 +164,35 @@
   @keyframes floating {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
+  }
+  
+  /* Enhanced animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  /* Smooth transitions */
+  .transition-all-ease {
+    transition: all 0.3s ease;
+  }
+  
+  .transition-colors-ease {
+    transition: colors 0.3s ease;
+  }
+  
+  .transition-transform-ease {
+    transition: transform 0.3s ease;
   }
 }
 
@@ -192,12 +245,9 @@
   background: linear-gradient(to left, #ffffff, transparent);
 }
 
-
-
 .animate-marquee-alt:hover {
   animation-play-state: paused;
 }
-
 
 html, body {
   overflow-y: scroll;
