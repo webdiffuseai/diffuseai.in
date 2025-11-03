@@ -4,27 +4,27 @@ import ScrollStack, { ScrollStackItem } from "../effects/ScrollStack";
 
 const services = [
   {
-    title: "Service 1",
+    title: "Full Stack Web Development",
     description: "Custom web development tailored to your business needs.",
   },
   {
-    title: "Service 2",
+    title: "Full Stack App Development",
     description: "Mobile app solutions for iOS and Android platforms.",
   },
   {
-    title: "Service 3",
+    title: "UI/UX Web, Mobile & Software Designing",
     description: "UI/UX design that puts user experience first.",
   },
   {
-    title: "Service 4",
+    title: "SEO Services for market reach",
     description: "SEO optimization to boost your online visibility.",
   },
   {
-    title: "Service 5",
+    title: "Cloud Services",
     description: "Cloud solutions and infrastructure management.",
   },
   {
-    title: "Service 6",
+    title: "Support & Maintenance",
     description: "Ongoing support and maintenance for your projects.",
   },
 ];

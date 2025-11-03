@@ -79,30 +79,6 @@ export const Team = () => {
     },
   ];
 
-  const advisors = [
-    {
-      name: 'Karunakaran C S',
-      bio: 'Founder & CEO, Pullinam Aerospace Technologies (P) Ltd',
-      linkedin: 'https://linkedin.com/in/karunakaran',
-      whatsapp: 'https://wa.me/919876543210',
-      email: 'mailto:karunakaran@example.com',
-    },
-    {
-      name: 'X',
-      bio: 'Industry Mentor & Researcher',
-      linkedin: 'https://linkedin.com/in/example-x',
-      whatsapp: 'https://wa.me/919812345678',
-      email: 'mailto:x@example.com',
-    },
-    {
-      name: 'Y',
-      bio: 'Entrepreneur | Consultant | Strategist',
-      linkedin: 'https://linkedin.com/in/example-y',
-      whatsapp: 'https://wa.me/919845612345',
-      email: 'mailto:y@example.com',
-    },
-  ];
-
   return (
     <div className="py-16 px-4">
       <SectionHeading
@@ -142,7 +118,9 @@ export const Team = () => {
             <div className="space-y-3 pt-2">
               {/* WhatsApp */}
               <div className="flex items-start gap-2">
-                <WhatsappIcon className="text-stellar-blue shrink-0" />
+                <div className="text-stellar-blue shrink-0">
+                  <WhatsappIcon />
+                </div>
                 <a
                   href={member.whatsapp}
                   target="_blank"
@@ -155,7 +133,9 @@ export const Team = () => {
 
               {/* Email */}
               <div className="flex items-start gap-2">
-                <EmailIcon className="text-[#fff] shrink-0" />
+                <div className="text-[#fff] shrink-0">
+                  <EmailIcon />
+                </div>
                 <a
                   href={member.email}
                   target="_blank"
@@ -168,7 +148,9 @@ export const Team = () => {
 
               {/* LinkedIn */}
               <div className="flex items-start gap-2">
-                <LinkedinIcon className="text-stellar-blue shrink-0" />
+                <div className="text-stellar-blue shrink-0">
+                  <LinkedinIcon />
+                </div>
                 <a
                   href={member.linkedin}
                   target="_blank"
@@ -186,34 +168,7 @@ export const Team = () => {
   </div>
 </div>
 
-
-
-      {/* Advisory Board */}
-      <div className="mt-20">
-        <h3 className="text-2xl font-semibold mb-8 text-gradient text-center">Advisory Board</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {advisors.map((advisor, index) => (
-            <div
-              key={index}
-              className="glass-card p-6 rounded-lg bg-opacity-20 bg-white backdrop-blur-sm"
-            >
-              <h4 className="text-xl font-semibold mb-1 text-center">{advisor.name}</h4>
-              <p className="text-gray-300 text-sm mb-4 text-center">{advisor.bio}</p>
-              <div className="flex justify-center gap-4 mt-2">
-                <a href={advisor.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                  <LinkedinIcon />
-                </a>
-                <a href={advisor.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp">
-                  <WhatsappIcon />
-                </a>
-                <a href={advisor.email} target="_blank" rel="noreferrer" aria-label="Email">
-                  <EmailIcon />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-        {/* Our Brands */}
+      {/* Our Brands */}
 <div className="mt-28">
   <h3 className="text-2xl font-semibold mb-8 text-gradient text-center"></h3>
   <div className="fade-edges overflow-hidden relative">
@@ -230,7 +185,6 @@ export const Team = () => {
   </div>
 </div>
 
-      </div>
     </div>
   );
 };
