@@ -49,7 +49,7 @@ export const Contact = () => {
     </p>
 
               <ul className="text-white/70 space-y-2 mb-6">
-                <li>✉ Email: <a href="mailto:contact@yourmail.com" className="text-[#2b00ff] hover:underline">contact@yourmail.com</a></li>
+                <li>✉ Email: <a href="mailto:infodiffuseai@gmail.com" className="text-[#2b00ff] hover:underline">infodiffuseai@gmail.com</a></li>
                 <li>🗺 Location: Tamil Nadu, India</li>
               </ul>
 
